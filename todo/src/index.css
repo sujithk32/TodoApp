@@ -1,0 +1,67 @@
+.container {
+  border: 2px solid black;
+  width: 350px;
+  height: 100%;
+  text-align: center;
+  background-color: #f8f1ff;
+  border-radius: 10px;
+  margin: auto;
+}
+
+* {
+  box-sizing: border-box;
+  font-family: "Roboto";
+}
+
+.addtask {
+  margin-left: 10px;
+  border-radius: 5px;
+  background-color: #decdf5;
+  color: black;
+  font-weight: bold;
+  margin-bottom: 15px;
+}
+.Tasks {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  grid-template-areas:
+    ". d d . ."
+    ". . . b .";
+  justify-content: center;
+  margin-top: 25px;
+  margin-bottom: 10px;
+}
+
+.taskmain {
+  overflow: hidden;
+  margin-left: 24px;
+  width: 166px;
+  border: 1px solid black;
+  grid-column: d;
+  border-radius: 5px;
+  background-color: #decdf5;
+  font-weight: bold;
+}
+
+.delete {
+  margin-left: 2px;
+  width: 73px;
+  grid-column: b;
+  background-color: #ff0000;
+  border-radius: 5px;
+  font-weight: bold;
+}
+
+.delete:hover {
+  background-color: #000000;
+  color: white;
+}
+
+.addtask:hover {
+  background-color: #000000;
+  color: white;
+}
+
+input[type="text"] {
+  border-radius: 5px;
+}
